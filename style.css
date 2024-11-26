@@ -1,0 +1,88 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6e3c1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Calculator styling */
+#calculator {
+    position: absolute;
+    background-color: #4acf65d9;
+        padding: 36px;
+        border-radius: 53px;
+        box-shadow: 0px 26px 56px #000000;
+        width: 300px;
+        height: 330px;
+        z-index: 2;
+    }
+
+/* Display box */
+#display {
+    width: 95%;
+    height: 45px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 25px;
+    border: 2px solid #5e2e8f;
+    border-radius: 16px;
+    padding: 9px;
+}
+
+/* Button grid */
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #2b2432;
+    color: rgb(247, 242, 242);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #f25877;
+}
+
+/* Active click effect */
+button:active {
+    transform: scale(0.9);
+    background-color: #eb1c1c;
+}
+
+/* Clear button special color */
+button#clear {
+    background-color: #dc3545;
+}
+
+button#clear:hover {
+    background-color: #a71d2a;
+}
+
+#bgText {
+    font-size: 8em;
+
+            text-shadow:
+                1px 1px 2px black,
+                    0 0 1em rgb(18, 18, 39),
+                    0 0 0.2em #4acf65;
+            color: white;
+            font:
+                10em Georgia,
+                serif;
+
+}
